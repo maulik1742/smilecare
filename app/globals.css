@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --background: #020617; /* deep slate */
+  --foreground: #e5e7eb; /* light gray */
+  --accent: #8bd93c; /* tooth green from logo */
+  --accent-soft: #bbf7d0;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #0f172a, #020617 55%);
+  color: var(--foreground);
+}
+
+.section-container {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.card {
+  @apply rounded-3xl border border-white/5 bg-slate-900/60 backdrop-blur-xl shadow-xl shadow-black/40;
+}
+
+.badge {
+  @apply inline-flex items-center gap-1 rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-emerald-300;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-[--accent] px-6 py-2.5 text-sm font-semibold shadow-lg shadow-lime-500/40 transition hover:bg-lime-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lime-300/70;
+  color: #f9fafb; /* near-white text for stronger contrast on lime button */
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/0 px-6 py-2.5 text-sm font-semibold text-slate-100 shadow-sm transition hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lime-300/70;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
