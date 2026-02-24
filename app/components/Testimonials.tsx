@@ -19,30 +19,36 @@ export default function Testimonials() {
       <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
         <div>
           <span className="badge">Testimonials</span>
-          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-slate-50 sm:text-3xl">
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-50 sm:text-4xl">
             Patients who trust their smile with us
           </h2>
-          <p className="mt-2 max-w-xl text-sm text-slate-300 sm:text-base">
+          <p className="mt-2 max-w-xl text-base text-slate-300">
             Real experiences from people who visited Smile Care Dental Clinic
             for everything from routine cleaning to advanced treatments.
           </p>
         </div>
-        <p className="text-xs text-slate-400 sm:text-sm">
+        <p className="text-sm font-medium text-slate-400">
           Rated with care-first approach · Modern equipment · Friendly team
         </p>
       </div>
 
-      <div className="mt-6 grid gap-5 md:grid-cols-3">
+      <div className="mt-8 grid gap-5 md:grid-cols-3">
         {testimonials.map((item) => (
-          <figure key={item.name} className="card relative p-5">
-            <div className="absolute right-5 top-5 text-4xl leading-none text-lime-400/30">
+          <figure
+            key={item.name}
+            className="card relative p-6 transition-transform duration-300 hover:-translate-y-1"
+          >
+            <div className="absolute right-6 top-6 text-5xl leading-none text-lime-400/20">
               “
             </div>
-            <blockquote className="text-sm leading-relaxed text-slate-200">
+            <blockquote className="text-base leading-relaxed text-slate-200">
               {item.text}
             </blockquote>
-            <figcaption className="mt-4 text-xs font-medium text-lime-200">
-              {item.name}
+            <figcaption className="mt-6 flex items-center gap-3">
+              <div className="h-0.5 w-6 bg-lime-400/50" />
+              <span className="text-sm font-bold text-lime-200">
+                {item.name}
+              </span>
             </figcaption>
           </figure>
         ))}
@@ -50,5 +56,3 @@ export default function Testimonials() {
     </section>
   );
 }
-
-
