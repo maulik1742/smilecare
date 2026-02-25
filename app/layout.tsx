@@ -18,6 +18,26 @@ export const metadata: Metadata = {
   title: "Smile Care Dental Clinic | Kurla West, Mumbai",
   description:
     "Smile Care Dental Clinic in Kurla West offers gentle, modern dentistry including dental implants, bleaching, braces, tooth filling and more.",
+  openGraph: {
+    title: "Smile Care Dental Clinic | Kurla West, Mumbai",
+    description:
+      "Smile Care Dental Clinic in Kurla West offers gentle, modern dentistry including dental implants, bleaching, braces, tooth filling and more.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Smile Care Dental Clinic",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Smile Care Dental Clinic | Kurla West, Mumbai",
+    description:
+      "Smile Care Dental Clinic in Kurla West offers gentle, modern dentistry including dental implants, bleaching, braces, tooth filling and more.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
