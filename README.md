@@ -186,9 +186,9 @@ What I offer:
 
 Interested? Reach out:
 
-- WhatsApp: +91-XXXXXXXXXX
-- LinkedIn: linkedin.com/in/yourprofile
-- Portfolio: yourportfolio.com
+- WhatsApp: +91-6355940198
+- LinkedIn: [linkedin.com/in/maulik-solanki-8b6a85218](https://www.linkedin.com/in/maulik-solanki-8b6a85218/)
+- Portfolio: [mauliksolanki.vercel.app](https://mauliksolanki.vercel.app/)
 
 ---
 
