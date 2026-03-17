@@ -6,7 +6,7 @@
 
 ## Live Demo
 
-Visit: [https://your-demo-link.vercel.app](https://smilecare-roan.vercel.app/)
+Visit: [https://smilecare-roan.vercel.app](https://smilecare-roan.vercel.app/)
 
 Fully responsive — works perfectly on mobile, tablet, and desktop.
 
